@@ -1,9 +1,9 @@
 import React, {Component} from 'react'; // this manages the components and there flow
 import ReactDom from 'react-dom'; //this is responsible for rendering components output to the DOM.
-import SearchBar from './components/SearchBar';
+import SearchBar from './SearchBar';
 import YTSearch from 'youtube-api-search'; // will be a function
-import VideoList from './components/videoList';
-import Player from './components/player'
+import VideoList from './videoList';
+import Player from './player'
 
 const API_KEY = 'AIzaSyAs5EQVJLJRFeaZi3RkJt8Ylr3oM4bYmls';
 
