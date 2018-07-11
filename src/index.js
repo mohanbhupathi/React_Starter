@@ -23,12 +23,12 @@ class App extends Component { //this is a class component
 
   searchBarText(searchValue){
     //this is not instance request, this will be a network request, it will take sometime to process the data
-    YTSearch({key:API_KEY, searchValue: searchValue}, data => {
+    YTSearch({key:API_KEY, term: searchValue}, data => {
       this.setState({
         videoData:data,
         selectedVideo:data[0]
       });
-      console.log('data for searchValue '+ searchValue + " is ", data);
+      console.log('data for searchValue '+ searchValue + " is ", data); //when we type Australia, it only accepts Australi
     })
 
   }
